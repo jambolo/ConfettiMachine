@@ -1,0 +1,118 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConfettiMachine", "ConfettiMachine.vcproj", "{E7B31249-50F2-45E1-AB33-A7DB7C4229B8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9B7EAFF0-47B7-4EB2-9EAC-57E59546010A} = {9B7EAFF0-47B7-4EB2-9EAC-57E59546010A}
+		{59661B78-3D6E-43FF-9B36-DBE355C9C1AC} = {59661B78-3D6E-43FF-9B36-DBE355C9C1AC}
+		{656E38C6-7029-478E-977C-E90EB59099F6} = {656E38C6-7029-478E-977C-E90EB59099F6}
+		{F93DC7A1-8517-45F9-886D-FD019441C453} = {F93DC7A1-8517-45F9-886D-FD019441C453}
+		{7FA4CC39-82F7-43A4-B693-23995D5A1C80} = {7FA4CC39-82F7-43A4-B693-23995D5A1C80}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Confetti", "..\Libraries\Confetti\Confetti.vcproj", "{656E38C6-7029-478E-977C-E90EB59099F6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DxUtility", "..\Libraries\DxUtility\DxUtility.vcproj", "{F93DC7A1-8517-45F9-886D-FD019441C453}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dxx", "..\Libraries\Dxx\Dxx.vcproj", "{9B7EAFF0-47B7-4EB2-9EAC-57E59546010A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AfxMisc", "..\Libraries\Misc\AfxMisc.vcproj", "{758468A4-920A-4BF9-936A-B41F0D3CD31D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Time", "..\Libraries\Time\Time.vcproj", "{59661B78-3D6E-43FF-9B36-DBE355C9C1AC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Msxmlx", "..\Libraries\Msxmlx\Msxmlx.vcproj", "{7FA4CC39-82F7-43A4-B693-23995D5A1C80}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 8
+		SccProjectName0 = Perforce\u0020Project
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Perforce\u0020SCM
+		CanCheckoutShared = true
+		SolutionUniqueID = {3F0E2FC7-3588-4551-A2CF-EFE05104C234}
+		SccProjectUniqueName1 = ConfettiMachine.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+		SccProjectUniqueName2 = ..\\Libraries\\Confetti\\Confetti.vcproj
+		SccLocalPath2 = ..\\Libraries\\Confetti
+		CanCheckoutShared = true
+		SccProjectUniqueName3 = ..\\Libraries\\DxUtility\\DxUtility.vcproj
+		SccLocalPath3 = ..\\Libraries\\DxUtility
+		CanCheckoutShared = true
+		SccProjectUniqueName4 = ..\\Libraries\\Dxx\\Dxx.vcproj
+		SccLocalPath4 = ..\\Libraries\\Dxx
+		CanCheckoutShared = true
+		SccProjectUniqueName5 = ..\\Libraries\\Misc\\AfxMisc.vcproj
+		SccLocalPath5 = ..\\Libraries\\Misc
+		CanCheckoutShared = true
+		SccProjectUniqueName6 = ..\\Libraries\\Time\\Time.vcproj
+		SccLocalPath6 = ..\\Libraries\\Time
+		CanCheckoutShared = true
+		SccProjectUniqueName7 = ..\\Libraries\\Msxmlx\\Msxmlx.vcproj
+		SccLocalPath7 = ..\\Libraries\\Msxmlx
+		CanCheckoutShared = true
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Profile = Profile
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E7B31249-50F2-45E1-AB33-A7DB7C4229B8}.Debug.ActiveCfg = Debug|Win32
+		{E7B31249-50F2-45E1-AB33-A7DB7C4229B8}.Debug.Build.0 = Debug|Win32
+		{E7B31249-50F2-45E1-AB33-A7DB7C4229B8}.Profile.ActiveCfg = Release|Win32
+		{E7B31249-50F2-45E1-AB33-A7DB7C4229B8}.Profile.Build.0 = Release|Win32
+		{E7B31249-50F2-45E1-AB33-A7DB7C4229B8}.Release.ActiveCfg = Release|Win32
+		{E7B31249-50F2-45E1-AB33-A7DB7C4229B8}.Release.Build.0 = Release|Win32
+		{656E38C6-7029-478E-977C-E90EB59099F6}.Debug.ActiveCfg = Debug|Win32
+		{656E38C6-7029-478E-977C-E90EB59099F6}.Debug.Build.0 = Debug|Win32
+		{656E38C6-7029-478E-977C-E90EB59099F6}.Profile.ActiveCfg = Profile|Win32
+		{656E38C6-7029-478E-977C-E90EB59099F6}.Profile.Build.0 = Profile|Win32
+		{656E38C6-7029-478E-977C-E90EB59099F6}.Release.ActiveCfg = Release|Win32
+		{656E38C6-7029-478E-977C-E90EB59099F6}.Release.Build.0 = Release|Win32
+		{F93DC7A1-8517-45F9-886D-FD019441C453}.Debug.ActiveCfg = Debug|Win32
+		{F93DC7A1-8517-45F9-886D-FD019441C453}.Debug.Build.0 = Debug|Win32
+		{F93DC7A1-8517-45F9-886D-FD019441C453}.Profile.ActiveCfg = Profile|Win32
+		{F93DC7A1-8517-45F9-886D-FD019441C453}.Profile.Build.0 = Profile|Win32
+		{F93DC7A1-8517-45F9-886D-FD019441C453}.Release.ActiveCfg = Release|Win32
+		{F93DC7A1-8517-45F9-886D-FD019441C453}.Release.Build.0 = Release|Win32
+		{9B7EAFF0-47B7-4EB2-9EAC-57E59546010A}.Debug.ActiveCfg = Debug|Win32
+		{9B7EAFF0-47B7-4EB2-9EAC-57E59546010A}.Debug.Build.0 = Debug|Win32
+		{9B7EAFF0-47B7-4EB2-9EAC-57E59546010A}.Profile.ActiveCfg = Profile|Win32
+		{9B7EAFF0-47B7-4EB2-9EAC-57E59546010A}.Profile.Build.0 = Profile|Win32
+		{9B7EAFF0-47B7-4EB2-9EAC-57E59546010A}.Release.ActiveCfg = Release|Win32
+		{9B7EAFF0-47B7-4EB2-9EAC-57E59546010A}.Release.Build.0 = Release|Win32
+		{758468A4-920A-4BF9-936A-B41F0D3CD31D}.Debug.ActiveCfg = Debug|Win32
+		{758468A4-920A-4BF9-936A-B41F0D3CD31D}.Debug.Build.0 = Debug|Win32
+		{758468A4-920A-4BF9-936A-B41F0D3CD31D}.Profile.ActiveCfg = Release|Win32
+		{758468A4-920A-4BF9-936A-B41F0D3CD31D}.Profile.Build.0 = Release|Win32
+		{758468A4-920A-4BF9-936A-B41F0D3CD31D}.Release.ActiveCfg = Release|Win32
+		{758468A4-920A-4BF9-936A-B41F0D3CD31D}.Release.Build.0 = Release|Win32
+		{59661B78-3D6E-43FF-9B36-DBE355C9C1AC}.Debug.ActiveCfg = Debug|Win32
+		{59661B78-3D6E-43FF-9B36-DBE355C9C1AC}.Debug.Build.0 = Debug|Win32
+		{59661B78-3D6E-43FF-9B36-DBE355C9C1AC}.Profile.ActiveCfg = Debug|Win32
+		{59661B78-3D6E-43FF-9B36-DBE355C9C1AC}.Profile.Build.0 = Debug|Win32
+		{59661B78-3D6E-43FF-9B36-DBE355C9C1AC}.Release.ActiveCfg = Release|Win32
+		{59661B78-3D6E-43FF-9B36-DBE355C9C1AC}.Release.Build.0 = Release|Win32
+		{7FA4CC39-82F7-43A4-B693-23995D5A1C80}.Debug.ActiveCfg = Debug|Win32
+		{7FA4CC39-82F7-43A4-B693-23995D5A1C80}.Debug.Build.0 = Debug|Win32
+		{7FA4CC39-82F7-43A4-B693-23995D5A1C80}.Profile.ActiveCfg = Profile|Win32
+		{7FA4CC39-82F7-43A4-B693-23995D5A1C80}.Profile.Build.0 = Profile|Win32
+		{7FA4CC39-82F7-43A4-B693-23995D5A1C80}.Release.ActiveCfg = Release|Win32
+		{7FA4CC39-82F7-43A4-B693-23995D5A1C80}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

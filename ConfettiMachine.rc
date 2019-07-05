@@ -1,0 +1,715 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\ConfettiMachine.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ConfettiMachine.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ConfettiMachine...",   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About ConfettiMachine"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ConfettiMachine Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDPP_EMITTER DIALOGEX 0, 0, 186, 347
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Emitters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CONTROLS_EMITTER_NAME,7,7,172,97,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New",IDC_CONTROLS_EMITTER_NEW,7,26,50,14
+    PUSHBUTTON      "Delete",IDC_CONTROLS_EMITTER_DELETE,129,26,50,14
+    LTEXT           "Emitter Volume:",IDC_STATIC,7,53,53,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_CONTROLS_EMITTER_VOLUME,60,53,119,76,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Appearance:",IDC_STATIC,7,74,53,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_CONTROLS_EMITTER_APPEARANCE,60,74,119,85,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Environment",IDC_STATIC,7,95,53,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_CONTROLS_EMITTER_ENVIRONMENT,60,95,119,70,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Particle Type",IDC_STATIC,7,116,172,78
+    CONTROL         "Point",IDC_CONTROLS_EMITTER_PARTICLETYPE_POINT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,129,155,10
+    CONTROL         "Streak",IDC_CONTROLS_EMITTER_PARTICLETYPE_STREAK,"Button",
+                    BS_AUTORADIOBUTTON,15,141,155,10
+    CONTROL         "Textured",IDC_CONTROLS_EMITTER_PARTICLETYPE_TEXTURED,
+                    "Button",BS_AUTORADIOBUTTON,15,153,155,10
+    CONTROL         "Sphere",IDC_CONTROLS_EMITTER_PARTICLETYPE_SPHERE,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,15,165,155,10
+    CONTROL         "Emitter",IDC_CONTROLS_EMITTER_PARTICLETYPE_EMITTER,
+                    "Button",BS_AUTORADIOBUTTON | WS_DISABLED,15,177,155,10
+    RTEXT           "Number of particles:",IDC_STATIC,7,207,80,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_EMITTER_COUNT,88,207,49,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    RTEXT           "Lifetime:",IDC_STATIC,7,225,80,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_EMITTER_LIFETIME,88,225,49,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Initial Color:",IDC_STATIC,7,245,80,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_EMITTER_INITIALCOLOR,88,244,49,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Initial Radius:",IDC_STATIC,7,266,80,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_EMITTER_INITIALRADIUS,88,265,49,14,
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Initial Velocity",IDC_STATIC,7,306,172,34
+    RTEXT           "Min:",IDC_STATIC,15,318,17,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_EMITTER_MINVELOCITY,37,318,52,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Max:",IDC_STATIC,95,318,20,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_EMITTER_MAXVELOCITY,119,318,52,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Max spread (degrees):",IDC_STATIC,7,287,80,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_EMITTER_MAXSPREAD,88,286,49,14,
+                    ES_AUTOHSCROLL
+END
+
+IDD_NEWEMITTER DIALOGEX 0, 0, 186, 49
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Enter the new emitter's name:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,28,50,14
+    EDITTEXT        IDC_NEWEMITTER_NAME,7,7,172,14,ES_AUTOHSCROLL
+END
+
+IDPP_APPEARANCE DIALOGEX 0, 0, 186, 347
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Appearances"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CONTROLS_APPEARANCE_NAME,7,7,172,97,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New",IDC_CONTROLS_APPEARANCE_NEW,7,26,50,14
+    PUSHBUTTON      "Delete",IDC_CONTROLS_APPEARANCE_DELETE,129,26,50,14
+    GROUPBOX        "Change in color (per second):",IDC_STATIC,7,52,172,40
+    RTEXT           "R:",IDC_STATIC,18,67,16,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_APPEARANCE_COLORRATE_R,34,67,21,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "G:",IDC_STATIC,55,67,16,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_APPEARANCE_COLORRATE_G,71,67,21,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "B:",IDC_STATIC,92,67,16,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_APPEARANCE_COLORRATE_B,108,67,21,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "A:",IDC_STATIC,129,67,16,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_APPEARANCE_COLORRATE_A,145,67,21,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Change in size (per second):",IDC_STATIC,15,102,114,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_APPEARANCE_RADIUSRATE,133,102,40,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Angular velocity (degrees/second):",IDC_STATIC,15,123,
+                    114,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_APPEARANCE_ANGULARVELOCITY,133,123,40,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Initial size:",IDC_STATIC,15,142,114,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_APPEARANCE_SIZE,133,142,40,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Texture file name:",IDC_STATIC,7,167,60,8
+    EDITTEXT        IDC_CONTROLS_APPEARANCE_TEXTURE,7,178,172,14,
+                    ES_AUTOHSCROLL
+END
+
+IDPP_ENVIRONMENT DIALOGEX 0, 0, 186, 347
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Environments"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CONTROLS_ENVIRONMENT_NAME,7,7,172,97,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New",IDC_CONTROLS_ENVIRONMENT_NEW,7,26,50,14
+    PUSHBUTTON      "Delete",IDC_CONTROLS_ENVIRONMENT_DELETE,129,26,50,14
+    GROUPBOX        "Gravity",IDC_STATIC,7,53,172,31
+    EDITTEXT        IDC_CONTROLS_ENVIRONMENT_GRAVITY_X,33,63,25,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "X:",IDC_STATIC,22,63,10,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_ENVIRONMENT_GRAVITY_Y,85,63,25,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Y:",IDC_STATIC,59,63,25,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_ENVIRONMENT_GRAVITY_Z,137,63,25,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Z:",IDC_STATIC,111,63,25,14,SS_CENTERIMAGE
+    GROUPBOX        "Wind Velocity",IDC_STATIC,7,91,172,31
+    EDITTEXT        IDC_CONTROLS_ENVIRONMENT_WINDVELOCITY_X,33,101,25,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "X:",IDC_STATIC,22,101,10,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_ENVIRONMENT_WINDVELOCITY_Y,85,101,25,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Y:",IDC_STATIC,59,101,25,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_ENVIRONMENT_WINDVELOCITY_Z,137,101,25,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Z:",IDC_STATIC,111,101,25,14,SS_CENTERIMAGE
+    GROUPBOX        "Wind Gustiness",IDC_STATIC,7,133,172,31
+    EDITTEXT        IDC_CONTROLS_ENVIRONMENT_GUSTINESS_X,33,143,25,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "X:",IDC_STATIC,22,143,10,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_ENVIRONMENT_GUSTINESS_Y,85,143,25,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Y:",IDC_STATIC,59,143,25,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_ENVIRONMENT_GUSTINESS_Z,137,143,25,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Z:",IDC_STATIC,111,143,25,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_ENVIRONMENT_AIRFRICTION,48,175,38,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Air Friction:",IDC_STATIC,7,175,38,14,SS_CENTERIMAGE
+    LISTBOX         IDC_CONTROLS_ENVIRONMENT_BOUNCEPLANES,7,207,172,47,
+                    LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Bounce Planes (select to activate):",IDC_STATIC,7,196,
+                    112,8
+    LISTBOX         IDC_CONTROLS_ENVIRONMENT_CLIPPLANES,7,283,172,47,
+                    LBS_SORT | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Clip Planes (select to activate):",IDC_STATIC,7,270,100,
+                    8
+END
+
+IDPP_BOUNCEPLANE DIALOGEX 0, 0, 186, 347
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Bounce Planes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CONTROLS_BOUNCEPLANE_NAME,7,7,172,97,
+                    CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New",IDC_CONTROLS_BOUNCEPLANE_NEW,7,26,50,14
+    PUSHBUTTON      "Delete",IDC_CONTROLS_BOUNCEPLANE_DELETE,129,26,50,14
+    EDITTEXT        IDC_CONTROLS_BOUNCEPLANE_X,30,65,21,14,ES_AUTOHSCROLL
+    RTEXT           "A:",IDC_STATIC,17,65,11,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_BOUNCEPLANE_Y,69,65,21,14,ES_AUTOHSCROLL
+    RTEXT           "B:",IDC_STATIC,53,65,14,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_BOUNCEPLANE_Z,108,65,21,14,ES_AUTOHSCROLL
+    RTEXT           "C:",IDC_STATIC,92,65,14,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_BOUNCEPLANE_D,147,65,21,14,ES_AUTOHSCROLL
+    RTEXT           "D:",IDC_STATIC,131,65,14,14,SS_CENTERIMAGE
+    GROUPBOX        "Plane",IDC_STATIC,7,50,172,40
+    EDITTEXT        IDC_CONTROLS_BOUNCEPLANE_DAMPENING,56,100,35,14,
+                    ES_AUTOHSCROLL
+    RTEXT           "Dampening:",IDC_STATIC,14,100,41,14,SS_CENTERIMAGE
+END
+
+IDPP_CLIPPLANE DIALOGEX 0, 0, 186, 347
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CAPTION
+CAPTION "Clip Planes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CONTROLS_CLIPPLANE_NAME,7,7,172,97,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "New",IDC_CONTROLS_CLIPPLANE_NEW,7,26,50,14
+    PUSHBUTTON      "Delete",IDC_CONTROLS_CLIPPLANE_DELETE,129,26,50,14
+    EDITTEXT        IDC_CONTROLS_CLIPPLANE_X,30,63,21,14,ES_AUTOHSCROLL
+    RTEXT           "A:",IDC_STATIC,17,63,11,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_CLIPPLANE_Y,69,63,21,14,ES_AUTOHSCROLL
+    RTEXT           "B:",IDC_STATIC,53,63,14,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_CLIPPLANE_Z,108,63,21,14,ES_AUTOHSCROLL
+    RTEXT           "C:",IDC_STATIC,92,63,14,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CONTROLS_CLIPPLANE_D,147,63,21,14,ES_AUTOHSCROLL
+    RTEXT           "D:",IDC_STATIC,131,63,14,14,SS_CENTERIMAGE
+END
+
+IDD_NEWAPPEARANCE DIALOGEX 0, 0, 186, 49
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Enter the new appearance's name:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,28,50,14
+    EDITTEXT        IDC_NEWAPPEARANCE_NAME,7,7,172,14,ES_AUTOHSCROLL
+END
+
+IDD_NEWBOUNCEPLANE DIALOGEX 0, 0, 186, 49
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Enter the new bounce plane's name:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,28,50,14
+    EDITTEXT        IDC_NEWBOUNCEPLANE_NAME,7,7,172,14,ES_AUTOHSCROLL
+END
+
+IDD_NEWENVIRONMENT DIALOGEX 0, 0, 186, 49
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Enter the new environment's name:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,28,50,14
+    EDITTEXT        IDC_NEWENVIRONMENT_NAME,7,7,172,14,ES_AUTOHSCROLL
+END
+
+IDD_NEWCLIPPLANE DIALOGEX 0, 0, 186, 49
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Enter the new clip plane's name:"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,28,50,14
+    EDITTEXT        IDC_NEWCLIPPLANE_NAME,7,7,172,14,ES_AUTOHSCROLL
+END
+
+IDD_CONFIGURATIONVIEW DIALOGEX 0, 0, 200, 347
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "TODO: Place form controls on this dialog.",IDC_STATIC,
+                    34,42,131,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ConfettiMachine.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "ConfettiMachine.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDPP_EMITTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+
+    IDD_NEWEMITTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDPP_APPEARANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+
+    IDPP_ENVIRONMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+
+    IDPP_BOUNCEPLANE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+
+    IDPP_CLIPPLANE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+
+    IDD_NEWAPPEARANCE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_NEWBOUNCEPLANE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_NEWENVIRONMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_NEWCLIPPLANE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_CONFIGURATIONVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\ConfettiMachine.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Confetti Machine\n\nConfetti\nConfetti Files (*.xml)\n.xml\nConfetti.Document\nConfett.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ConfettiMachine"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\ConfettiMachine.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
